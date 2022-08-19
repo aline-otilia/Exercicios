@@ -12,21 +12,28 @@ namespace Exercicios.Controllers
         }
 
         [HttpGet]
-	    public IActionResult CondicionalIf()
-	    {
-		    return View();
-	    }
+        public IActionResult CondicionalIf()
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult CondicionalIf(Partida partida)
         {
             return View(partida);
         }
-        
-	    [HttpGet]
-	    public IActionResult CondicionalSwitch()
-	    {
-		    return View();
-	    }
+
+        [HttpGet]
+        public IActionResult CondicionalSwitch()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CondicionalSwitch(Pedido pedido)
+        {
+            return View(pedido);
+        }
+
     }
 }
